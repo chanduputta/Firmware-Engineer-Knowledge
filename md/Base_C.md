@@ -82,7 +82,7 @@ enum {
 * In the transfer of parameters in the function call, the system implicitly converts the actual parameter into the type of the formal parameter and assigns it to the formal parameter
 * When the function has a return value, the system implicitly converts the value of the return expression to the return value type
 
-## bitwise operations
+## bitwise-operations
 |operator|action|
 |:-----:|:-----:|
 | & |Bitwise AND|
