@@ -1,9 +1,8 @@
-﻿数据结构与简单算法
-=======================
-
-## **链表**
-* 定义 ：为了避免删除与插入时的线性开销，可以允许表不是连续存储的。链表的每一个结构均包含表元素和指向包含该元素后继元的结构的指针，最后一个元素的Next指针指向NULL。
-* 节点定义
+Data Structures and Simple Algorithms 
+========================= 
+## **Linked List** 
+* Definition: In order to avoid the linear overhead of deletion and insertion, it is possible to allow the table to be stored non-contiguously. Each structure of the linked list contains a table element and a pointer to a structure containing the element's successor, and the Next pointer of the last element points to NULL.
+* node definition
 ```C
     typedef struct node
     {
@@ -13,7 +12,7 @@
     Node;
     typedef struct node* NodePtr;
 ```  
-* 创建链表（带表头）  
+* Create linked list (with header)  
 ```C
 NodePtr ListCreate(void)
 {
@@ -28,14 +27,14 @@ NodePtr ListCreate(void)
     return Head;
 }
 ```
-* 判断链表为空
+* Judging that the linked list is empty
 ```C
 int IsListEmpty(NodePtr L)
 {
     return L->next == NULL;
 }
 ```
-* 插入一个节点
+* insert a node
 ```
 int ListInsertNode(NodePtr L,int x , NodePtr p)
 {
@@ -51,7 +50,7 @@ int ListInsertNode(NodePtr L,int x , NodePtr p)
     return 0;
 }
 ```
-* 删除一个节点
+* delete a node
 ```C
 int ListDeleteNode(NodePtr L,int x)
 {
@@ -71,7 +70,7 @@ int ListDeleteNode(NodePtr L,int x)
     return -2;
 }
 ```
-* 删除链表
+* delete linked list
 ```C
 void ListDelete(NodePtr L)
 {
@@ -85,9 +84,9 @@ void ListDelete(NodePtr L)
 }
 ```
 
-## **栈**
-* 定义:栈是一种先入后出的结构，程序的运行就是放在栈空间进行的。
-* 创建栈
+## **stack**
+* Definition: The stack is a first-in-last-out structure, and the operation of the program is carried out in the stack space.
+* create stack
 ```C
 Stack StackCreate(void)
 {
@@ -101,7 +100,7 @@ Stack StackCreate(void)
 	return Head;
 }
 ```
-* 入栈
+* push
 ```C
 int StackPush(Stack stack, int x)
 {
@@ -117,7 +116,7 @@ int StackPush(Stack stack, int x)
 	return 0;
 }
 ```
-* 出栈
+* pop out
 ```C
 int StackPop(Stack stack)
 {
@@ -132,7 +131,7 @@ int StackPop(Stack stack)
 	return -1;
 }
 ```
-* 获取栈顶数据
+* Get the data on the top of the stack
 ```C
 int StackTop(Stack stack)
 {
@@ -144,7 +143,7 @@ int StackTop(Stack stack)
 	return stack->next->num;
 }
 ```
-* 销毁栈
+* destroy stack
 ```C
 void StackDestory(Stack stack)
 {
@@ -159,7 +158,12 @@ void StackDestory(Stack stack)
 ```
 
 ## **Tree** 
-* Basic knowledge *
-* A tree is composed of N nodes and N-1 edges * A node without a son is called a leaf node, and a node without a parent is called a root node. * A path is a sequence from N1 to N(i 1). In this sequence, each node is the father of the next node, and the length of the path is the number of edges on the path. Every node has a path of length 0 to itself. * The depth of any node is the length of the only path from the root node to the node, and the depth of the root node is 0. * The height of any node is the length of the longest path from the node to a leaf, and the height of all leaves is 0. * The depth of the tree is equal to the depth of its deepest leaf, the height of the tree is equal to the height of the root node, and the height of the tree is equal to the depth
+* Basic knowledge 
+* A tree is composed of N nodes and N-1 edges
+* A node without a son is called a leaf node, and a node without a parent is called a root node.
+* A path is a sequence from N1 to N(i 1). In this sequence, each node is the father of the next node, and the length of the path is the number of edges on the path. Every node has a path of length 0 to itself.
+* The depth of any node is the length of the only path from the root node to the node, and the depth of the root node is 0.
+* The height of any node is the length of the longest path from the node to a leaf, and the height of all leaves is 0.
+* The depth of the tree is equal to the depth of its deepest leaf, the height of the tree is equal to the height of the root node, and the height of the tree is equal to the depth
 
 
