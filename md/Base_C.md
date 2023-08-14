@@ -2,16 +2,16 @@ C language basics
 ================
 
 ## **Table of contents**
-* [Data types and operators](#data type and operator)
-     * [variable name](#variable name)
-     * [data type](#data type)
-     * [type conversion](#type conversion)
-     * [Bit Operations](#Bitwise-Operations)
-* [array and pointer](#array-and-pointer)
-     * [pointer-base](#pointer-base)
-     * [various types of pointers](#various types of pointers)
-     * [two-dimensional array and pointer](#two-dimensional array and pointer)
-     * [Application of function pointer - callback](#Application of function pointer - callback)
+* [Data types and operators](#Data-types-and-operators)
+     * [variable name](#variable-name)
+     * [data type](#type-of-data)
+     * [type conversion](#Type-Conversion)
+     * [Bit Operations](#bitwise-operations)
+* [array and pointer](#Arrays-and-pointers)
+     * [pointer-base](#Pointer-Basics)
+     * [various types of pointers](#various-types-of-pointers)
+     * [two-dimensional array and pointer](#two-dimensional-array-and-pointer)
+     * [Application of function pointer - callback](#Application-of-function-pointer---callback)
 * [struct](#struct)
      * [struct](#struct)
      * [byte alignment](#byte alignment)
@@ -30,12 +30,12 @@ C language basics
      * [volatile](#volatile)
      * [register](#register)
 
-## **Data types and operators**
-### variable name
+## **Data-types-and-operators**
+### variable-name
 * The variable name is composed of letters and numbers, and must start with a letter, and the underscore _ is regarded as a letter.
 * Use lowercase for variables and uppercase for constants.
 
-### type of data  
+### type-of-data  
 * C language only provides the following data types
 
 |Type|Description|
@@ -74,7 +74,7 @@ enum {
 }
 ```
 
-## Type Conversion
+## Type-Conversion
 * In the arithmetic operation expression, the low type will be converted to the high type
 **priority**
      ![](https://img-blog.csdn.net/20170616200811277?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvUUNaVFpTV1QzNTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve /70/gravity/SouthEast)
@@ -114,8 +114,8 @@ enum {
      #define clrbit(X,Y) X &= ~(1<<Y)
 ```
 
-## **Arrays and pointers**
-### Pointer Basics
+## **Arrays-and-pointers**
+### Pointer-Basics
 * Pointer: **The pointer is the address of the program data in the memory, and the pointer variable is the variable used to save these addresses. The memory space occupied by the pointer variable is related to the system, which is sizeof(void*)**
 
 ### Various types of pointers
