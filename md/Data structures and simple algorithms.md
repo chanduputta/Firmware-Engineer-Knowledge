@@ -158,13 +158,8 @@ void StackDestory(Stack stack)
 }
 ```
 
-## **树**
-* 基础知识
-    * 一颗树是由N个节点与N-1条边组成的
-    * 没有儿子的节点叫叶子节点，没有父节点的叫根节点。
-    * 路径是N1到N(i+1)的序列，这个序列中，每一个节点是下一个节点的父亲，路径的长就是该路径上边的数目。每一个节点到其自身都有一个长为0路径。
-    * 任意节点的深度是从根节点到该节点的唯一路径的长,根节点的深度为0.
-    * 任意节点的高是从该节点到一片树叶的最长路径的长，所有树叶的高都为0.
-    * 树的深度等于它的最深的树叶的深度，树的高等于根节点的高，树的高与深度相等
+## **Tree** 
+* Basic knowledge *
+* A tree is composed of N nodes and N-1 edges * A node without a son is called a leaf node, and a node without a parent is called a root node. * A path is a sequence from N1 to N(i 1). In this sequence, each node is the father of the next node, and the length of the path is the number of edges on the path. Every node has a path of length 0 to itself. * The depth of any node is the length of the only path from the root node to the node, and the depth of the root node is 0. * The height of any node is the length of the longest path from the node to a leaf, and the height of all leaves is 0. * The depth of the tree is equal to the depth of its deepest leaf, the height of the tree is equal to the height of the root node, and the height of the tree is equal to the depth
 
 
