@@ -6,7 +6,7 @@ C language basics
      * [variable name](#variable name)
      * [data type](#data type)
      * [type conversion](#type conversion)
-     * [Bit Operations](#Bit-Operations)
+     * [Bit Operations](#Bitwise-Operations)
 * [array and pointer](#array-and-pointer)
      * [pointer-base](#pointer-base)
      * [various types of pointers](#various types of pointers)
