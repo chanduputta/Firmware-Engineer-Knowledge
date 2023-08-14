@@ -2,7 +2,7 @@ C language basics
 ================
 
 ## **Table of contents**
-* [data type and operator](#data type and operator)
+* [Data types and operators](#data type and operator)
      * [variable name](#variable name)
      * [data type](#data type)
      * [type conversion](#type conversion)
